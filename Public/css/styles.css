@@ -581,6 +581,10 @@ a {
   }
 }
 
+.visible {
+  visibility: visible;
+}
+
 .absolute {
   position: absolute;
 }
@@ -862,6 +866,14 @@ a {
   border-radius: 9999px;
 }
 
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -881,6 +893,11 @@ a {
 .border-gega-red {
   --tw-border-opacity: 1;
   border-color: rgb(188 26 69 / var(--tw-border-opacity));
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -910,6 +927,11 @@ a {
 
 .bg-transparent {
   background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -997,6 +1019,11 @@ a {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 }
 
 .pb-8 {
@@ -1100,6 +1127,11 @@ a {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1123,6 +1155,38 @@ a {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+.selection\:visible *::-moz-selection {
+  visibility: visible;
+}
+
+.selection\:visible *::selection {
+  visibility: visible;
+}
+
+.selection\:hidden *::-moz-selection {
+  display: none;
+}
+
+.selection\:hidden *::selection {
+  display: none;
+}
+
+.selection\:visible::-moz-selection {
+  visibility: visible;
+}
+
+.selection\:visible::selection {
+  visibility: visible;
+}
+
+.selection\:hidden::-moz-selection {
+  display: none;
+}
+
+.selection\:hidden::selection {
+  display: none;
 }
 
 .placeholder\:text-xs::-moz-placeholder {
@@ -1206,6 +1270,26 @@ a {
 
 .group:hover .group-hover\:opacity-50 {
   opacity: 0.5;
+}
+
+.dark\:border-white:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.dark\:bg-black:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.dark\:text-gega-grey:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(221 221 221 / var(--tw-text-opacity));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
