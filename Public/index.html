@@ -18,7 +18,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
   </head>
-  <body class="font-open">
+  <body class="font-open dark">
+
+    <!--Dark/Light Toggle-->
+    <div class="absolute top-1 left-5 cursor-pointer text-lg">
+      <i class="fa-solid fa-sun text-white hidden" id="sun"></i>
+      <i class="fa-solid fa-moon text-white hidden" id="moon"></i>
+    </div>
+
     <!--Header Section-->
     <header class="bg-black py-6 lg:py-12 text-gega-grey">
       <!--Header Container-->
@@ -511,5 +518,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
